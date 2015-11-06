@@ -19,5 +19,5 @@ while not_found:
         not_found = False
     a += 20
 
-#Please not that this is a very crappy solutions iwth not a lot of thought put into it :/
+#Please note that this is a very crappy solutions with not a lot of thought put into it :/
 #I'll make it better some day. 
