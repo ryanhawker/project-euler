@@ -18,7 +18,11 @@ def isPrime(candidate):
         less than the numbers square root. To see a proof go to proof wiki and search for "Composite Number has
         Prime Factor not Greater Than its Square Root.
         '''
-        if candidate.is_integer():
+        try:
+            result = candidate.is_integer()
+        except AttributeError:
+            result = isinstance(candidate, int)
+        if result:
             for potential_factor in arange(2, candidate**0.5):
                 if candidate%potential_factor == 0:
                     return False
